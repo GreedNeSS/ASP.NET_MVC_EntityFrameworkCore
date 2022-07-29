@@ -1,0 +1,14 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model _2_AddingAndDisplayingData.Models.User
+
+<form method="post">
+    <div>
+        <label asp-for=Name>Введите имя:</label>
+        <input asp-for=Name />
+    </div>
+    <div>
+        <label asp-for=Age>Введите возраст:</label>
+        <input asp-for=Age type="number" />
+    </div>
+    <button>Отправить</button>
+</form>

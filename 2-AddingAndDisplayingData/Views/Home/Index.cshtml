@@ -1,0 +1,10 @@
+﻿@model IEnumerable<_2_AddingAndDisplayingData.Models.User>
+
+<h2>Список пользователей:</h2>
+<table>
+    <tr><th>Id</th><th>Name</th><th>Age</th></tr>
+    @foreach(var user in @Model)
+    {
+        <tr><td>@user.Id</td><td>@user.Name</td><td>@user.Age</td></tr>
+    }
+</table>

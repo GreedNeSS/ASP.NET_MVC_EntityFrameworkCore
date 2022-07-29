@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-Connection", "1-Connection\1-Connection.csproj", "{BCA21370-7096-4F47-8423-15B98D673AB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-Connection", "1-Connection\1-Connection.csproj", "{BCA21370-7096-4F47-8423-15B98D673AB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-AddingAndDisplayingData", "2-AddingAndDisplayingData\2-AddingAndDisplayingData.csproj", "{4DB1B08B-7B31-4FF9-82FB-C9BE72ACA6AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BCA21370-7096-4F47-8423-15B98D673AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCA21370-7096-4F47-8423-15B98D673AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCA21370-7096-4F47-8423-15B98D673AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB1B08B-7B31-4FF9-82FB-C9BE72ACA6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB1B08B-7B31-4FF9-82FB-C9BE72ACA6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB1B08B-7B31-4FF9-82FB-C9BE72ACA6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB1B08B-7B31-4FF9-82FB-C9BE72ACA6AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
