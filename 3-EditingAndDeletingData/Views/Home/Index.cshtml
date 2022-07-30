@@ -1,0 +1,21 @@
+﻿@model IEnumerable<_3_EditingAndDeletingData.Models.User>
+
+<h2>Список пользователей:</h2>
+<table>
+    <tr><th>Id</th><th>Name</th><th>Age</th></tr>
+    @foreach(var user in @Model)
+    {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.Name</td>
+            <td>@user.Age</td>
+            <td><a asp-action=Edit asp-route-id=@user.Id>Редактировать</a></td>
+            <td>
+                <form asp-controller=Api asp-action=Delete asp-route-id=@user.Id>
+                    <button>Удалить</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+<div><a asp-action="Create" asp-controller="Home" >Создать нового пользователя</a></div>

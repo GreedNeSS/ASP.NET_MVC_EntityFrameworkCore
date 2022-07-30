@@ -1,0 +1,13 @@
+﻿@model _3_EditingAndDeletingData.Models.User
+
+<form method="post" asp-controller=Api asp-action=Create>
+    <div>
+        <label asp-for=Name>Введите имя:</label>
+        <input asp-for=Name />
+    </div>
+    <div>
+        <label asp-for=Age>Введите возраст:</label>
+        <input asp-for=Age type="number" />
+    </div>
+    <button>Отправить</button>
+</form>
