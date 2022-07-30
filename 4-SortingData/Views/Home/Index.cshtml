@@ -1,0 +1,24 @@
+﻿@using _4_SortingData.Models
+@model IEnumerable<User>
+
+<h1>Список пользователей:</h1>
+<table>
+    <tr>
+        <th>
+            Идентифокатор
+        </th>
+        <th>
+            <a asp-route-sortOrder=@ViewData["NameSort"]>Имя</a>
+        </th>
+        <th>
+            <a asp-route-sortOrder=@ViewData["AgeSort"]>Возраст</a>
+        </th>
+        <th>
+            <a asp-route-sortOrder=@ViewData["CompanySort"]>Компания</a>
+        </th>
+    </tr>
+    @foreach(var user in @Model)
+    {
+        <tr><td>@user.Id</td><td>@user.Name</td><td>@user.Age</td><td>@user.Company!.Name</td></tr>
+    }
+</table>
