@@ -1,0 +1,26 @@
+﻿@model _6_DataFiltering.Models.UserListViewModel
+
+<h2>Каталог пользователей:</h2>
+<form method="get">
+    <div>
+        <label asp-for=Name>Имя: </label>
+        <input asp-for=Name/>
+
+        <label asp-for=Companies>Компания: </label>
+        <select name=company asp-items=@Model.Companies></select>
+
+        <input type="submit" value="Фильтр"/>
+    </div>
+</form>
+
+<table>
+    <tr>
+        <th>Имя</th>
+        <th>Возраст</th>
+        <th>Компания</th>
+    </tr>
+    @foreach(var user in @Model.Users)
+    {
+        <tr><td>@user.Name</td><td>@user.Age</td><td>@user.Company!.Name</td></tr>
+    }
+</table>
