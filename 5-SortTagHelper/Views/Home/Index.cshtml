@@ -1,0 +1,49 @@
+﻿@using _5_SortTagHelper.Models
+@model IndexViewModel
+
+<style>
+td,th {padding: 10px;}
+
+.glyphicon{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0 5px;
+}
+
+.glyphicon-chevron-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+  
+.glyphicon-chevron-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+</style>
+
+<h1>Список пользователей:</h1>
+<table>
+    <tr>
+        <th>
+            Идентифокатор
+        </th>
+        <th>
+            <sort-header action=Index up=@Model.SortViewModel.Up current=@Model.SortViewModel.Current
+            property=@Model.SortViewModel.NameSort>Имя</sort-header>
+        </th>
+        <th>
+            <sort-header action=Index up=@Model.SortViewModel.Up current=@Model.SortViewModel.Current
+            property=@Model.SortViewModel.AgeSort>Возраст</sort-header>
+        </th>
+        <th>
+            <sort-header action=Index up=@Model.SortViewModel.Up current=@Model.SortViewModel.Current
+            property=@Model.SortViewModel.CompanySort>Компания</sort-header>
+        </th>
+    </tr>
+    @foreach(var user in @Model.Users)
+    {
+        <tr><td>@user.Id</td><td>@user.Name</td><td>@user.Age</td><td>@user.Company!.Name</td></tr>
+    }
+</table>
