@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4-SortingData", "4-SortingD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5-SortTagHelper", "5-SortTagHelper\5-SortTagHelper.csproj", "{02613E77-730D-418E-A865-9FC272DA1346}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-DataFiltering", "6-DataFiltering\6-DataFiltering.csproj", "{5E259BAB-26F0-4370-8F6D-33FB94E47770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6-DataFiltering", "6-DataFiltering\6-DataFiltering.csproj", "{5E259BAB-26F0-4370-8F6D-33FB94E47770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-Pagination", "7-Pagination\7-Pagination.csproj", "{A40AA966-C141-45F0-ADFB-15CA68B9A02F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5E259BAB-26F0-4370-8F6D-33FB94E47770}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E259BAB-26F0-4370-8F6D-33FB94E47770}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E259BAB-26F0-4370-8F6D-33FB94E47770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A40AA966-C141-45F0-ADFB-15CA68B9A02F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A40AA966-C141-45F0-ADFB-15CA68B9A02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A40AA966-C141-45F0-ADFB-15CA68B9A02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A40AA966-C141-45F0-ADFB-15CA68B9A02F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
