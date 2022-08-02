@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6-DataFiltering", "6-DataFi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7-Pagination", "7-Pagination\7-Pagination.csproj", "{A40AA966-C141-45F0-ADFB-15CA68B9A02F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-PaginationTagHelper", "8-PaginationTagHelper\8-PaginationTagHelper.csproj", "{80E8E717-4B05-45D3-8EA5-CADB20915708}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8-PaginationTagHelper", "8-PaginationTagHelper\8-PaginationTagHelper.csproj", "{80E8E717-4B05-45D3-8EA5-CADB20915708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9-FilterSortPagination", "9-FilterSortPagination\9-FilterSortPagination.csproj", "{AC79498C-BC0E-44F6-9735-C1AE4633BE62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{80E8E717-4B05-45D3-8EA5-CADB20915708}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80E8E717-4B05-45D3-8EA5-CADB20915708}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80E8E717-4B05-45D3-8EA5-CADB20915708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC79498C-BC0E-44F6-9735-C1AE4633BE62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC79498C-BC0E-44F6-9735-C1AE4633BE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC79498C-BC0E-44F6-9735-C1AE4633BE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC79498C-BC0E-44F6-9735-C1AE4633BE62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
