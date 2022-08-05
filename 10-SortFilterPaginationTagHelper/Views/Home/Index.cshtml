@@ -1,0 +1,51 @@
+﻿@using _10_SortFilterPaginationTagHelper.Models
+@model _10_SortFilterPaginationTagHelper.Models.IndexViewModel
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<h2>Список пользователей:</h2>
+
+<form method="get">
+    <label>Имя: </label>
+    <input name="name" value=@Model.FilterViewModel.SelectedName />
+
+    <label>Компания: </label>
+    <select name="company" asp-items=@Model.FilterViewModel.Companies ></select>
+
+    <button>Фильтр</button>
+</form>
+
+<table class="table">
+    <tr>
+        <th>
+            Идентифокатор
+        </th>
+        <th>
+            <a asp-action=Index
+                asp-route-name=@Model.FilterViewModel.SelectedName
+                asp-route-company=@Model.FilterViewModel.SelectedCompany
+                asp-route-sortOrder=@Model.SortViewModel.NameSort>Имя</a>
+        </th>
+        <th>
+            <a asp-action=Index
+                asp-route-name=@Model.FilterViewModel.SelectedName
+                asp-route-company=@Model.FilterViewModel.SelectedCompany
+                asp-route-sortOrder=@Model.SortViewModel.AgeSort>Возраст</a>
+        </th>
+        <th>
+            <a asp-action=Index
+                asp-route-name=@Model.FilterViewModel.SelectedName
+                asp-route-company=@Model.FilterViewModel.SelectedCompany
+                asp-route-sortOrder=@Model.SortViewModel.CompanySort>Компания</a>
+        </th>
+    </tr>
+    @foreach(var user in @Model.Users)
+    {
+        <tr><td>@user.Id</td><td>@user.Name</td><td>@user.Age</td><td>@user.Company!.Name</td></tr>
+    }
+</table>
+
+<page-link page-action="Index" page-model=@Model.PageViewModel
+    page-url-name=@Model.FilterViewModel.SelectedName
+    page-url-company=@Model.FilterViewModel.SelectedCompany
+    page-url-sortorder=@Model.SortViewModel.ForPage
+    ></page-link>

@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8-PaginationTagHelper", "8-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9-FilterSortPagination", "9-FilterSortPagination\9-FilterSortPagination.csproj", "{AC79498C-BC0E-44F6-9735-C1AE4633BE62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-SortFilterPaginationTagHelper", "10-SortFilterPaginationTagHelper\10-SortFilterPaginationTagHelper.csproj", "{4FB49F6B-D92C-4EAF-A91F-CAF7AF8E8189}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-SortFilterPaginationTagHelper", "10-SortFilterPaginationTagHelper\10-SortFilterPaginationTagHelper.csproj", "{4FB49F6B-D92C-4EAF-A91F-CAF7AF8E8189}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
